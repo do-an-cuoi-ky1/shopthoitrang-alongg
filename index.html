@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Thời Trang A Long</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CỬA HÀNG THỜI TRANG A LONG</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Form nhập số đo -->
+            <div class="form-container">
+                <h2>Nhập số đo của bạn</h2>
+                <form id="sizeForm">
+                    <label for="height">Chiều cao (cm):</label>
+                    <input type="number" id="height" name="height" required>
+
+                    <label for="weight">Cân nặng (kg):</label>
+                    <input type="number" id="weight" name="weight" required>
+
+                    <label for="chest">Vòng ngực (cm):</label>
+                    <input type="number" id="chest" name="chest" required>
+
+                    <label for="waist">Vòng eo (cm):</label>
+                    <input type="number" id="waist" name="waist" required>
+
+                    <label for="legLength">Độ dài chân (cm):</label>
+                    <input type="number" id="legLength" name="legLength" required>
+
+                    <button type="button" onclick="calculateSize()">Tính size</button>
+                </form>
+                <p id="result"></p>
+            </div>
+
+            <!-- Bảng size -->
+            <div class="table-container">
+                <h2>Bảng size áo</h2>
+                <table>
+                    <tr>
+                        <th>Size</th>
+                        <th>Dài áo (cm)</th>
+                        <th>Ngực (cm)</th>
+                        <th>Cân nặng (kg)</th>
+                        <th>Chiều cao (cm)</th>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>63 - 67</td>
+                        <td>92 - 100</td>
+                        <td>50 - 60</td>
+                        <td>160 - 167</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>65 - 69</td>
+                        <td>96 - 104</td>
+                        <td>55 - 65</td>
+                        <td>163 - 170</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>67 - 71</td>
+                        <td>100 - 108</td>
+                        <td>65 - 75</td>
+                        <td>165 - 172</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>69 - 73</td>
+                        <td>104 - 112</td>
+                        <td>75 - 90</td>
+                        <td>170 - 180</td>
+                    </tr>
+                    <tr>
+                        <td>XLL</td>
+                        <td>70 - 75</td>
+                        <td>106 - 114</td>
+                        <td>85 - 100</td>
+                        <td>170 - 190</td>
+                    </tr>
+                </table>
+
+                <h2>Bảng size quần</h2>
+                <table>
+                    <tr>
+                        <th>Kích cỡ quần (inches)</th>
+                        <th>Vòng eo (cm)</th>
+                        <th>Chiều dài chân (cm)</th>
+                    </tr>
+                    <tr>
+                        <td>26 (S)</td>
+                        <td>68</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>27 (S)</td>
+                        <td>70</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td>28 (S)</td>
+                        <td>72</td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>29 (M)</td>
+                        <td>74</td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>30 (M)</td>
+                        <td>76</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <td>31 (M)</td>
+                        <td>78</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <td>32 (L)</td>
+                        <td>82</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>33 (L)</td>
+                        <td>84</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>34 (XL)</td>
+                        <td>87</td>
+                        <td>85</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
